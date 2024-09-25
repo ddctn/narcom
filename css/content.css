@@ -1,25 +1,56 @@
 body {
-	background: rgb(227, 238, 243);
+	background: #e1e1e1;
 }
 h1{
-	color: rgb(117, 57, 84);
+	color: rgba(0, 0, 0, 0.85);
   font-size: 38px;
+  font-weight: bold;
+  margin-top: 66px;
+  line-height: 45px;
 }
 
+h2{
+  margin-top: 50px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+p{
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+}
+
+.cont{
+  color: rgb(43, 41, 44);
+}
+
+blockquote{
+  margin-top: 20px;
+  font-style: italic;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+
+h3{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h4{
+  font-size: 18px;
+  font-weight: bold;
+}
 
 a{
 	text-decoration: none;
-	color: rgb(195, 72, 209);
+	color: rgb(143, 100, 149);
 }
 a:hover{
-	color: rgb(128, 68, 164);
+	color: rgb(140, 109, 158);
 
-}
-
-nav{
-  background: #eee;
-  border: 1 px solid #bbb;
-  /* border - обводка */
 }
 
 .pic1{
@@ -27,3 +58,16 @@ nav{
   margin: 2%;
   border-radius: 10px;
 }
+
+article{
+  width: 700px;
+  margin: 50px auto; /* внешний отступ */
+
+}
+
+/*h1 + hr + p + p {
+  margin-top: 8px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 22px;
+  line-height: 32px;
+} по классу обращаться удобнее, но так тоже можно */
