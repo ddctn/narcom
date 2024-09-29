@@ -62,8 +62,11 @@ a:hover{
 article{
   width: 700px;
   margin: 50px auto; /* внешний отступ */
-
 }
+
+ol{
+  list-style-type: decimal; 
+ }
 
 /*h1 + hr + p + p {
   margin-top: 8px;
