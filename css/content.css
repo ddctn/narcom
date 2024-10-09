@@ -1,6 +1,9 @@
+
+
 body {
 	background: #e1e1e1;
   font-family: 'Vollkorn-Regular';
+ 
 }
 h1{
 	color: rgba(0, 0, 0, 0.85);
@@ -70,6 +73,8 @@ article{
 ol{
   list-style-type: decimal; 
  }
+
+
 
 /*h1 + hr + p + p {
   margin-top: 8px;
