@@ -10,9 +10,15 @@ nav{
   box-sizing: border-box;
   opacity: .3; /* 30 %*/
   transition: all 1s ease;
+  height: 90vh;
+  overflow-y: scroll;
 }
 
 nav:hover{
   opacity: 1; /* 100% */
   transition: all 0.9s ease;
+}
+
+nav p{
+  margin-bottom: 0.5%;
 }

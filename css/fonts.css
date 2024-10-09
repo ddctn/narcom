@@ -1,0 +1,48 @@
+@font-face { 
+  font-family: 'Vollkorn-Black';
+  src: url(../fonts/Vollkorn-Black.ttf)
+} 
+@font-face {
+  font-family: 'Vollkorn-BlackItalic';
+  src: url(../fonts/Vollkorn-BlackItalic.ttf)
+}
+@font-face {
+  font-family: 'Vollkorn-Bold';
+  src: url(../fonts/Vollkorn-Bold.ttf)
+}
+@font-face {
+  font-family: 'Vollkorn-BoldItalic';
+  src: url(../fonts/Vollkorn-BoldItalic.ttf)
+}
+@font-face {
+  font-family: 'Vollkorn-ExtraBold';
+  src: url(../fonts/Vollkorn-ExtraBold.ttf);
+}
+@font-face {
+  font-family: 'Vollkorn-ExtraBoldItalic';
+  src: url(../fonts/Vollkorn-ExtraBoldItalic.ttf);
+}
+@font-face {
+  font-family: 'Vollkorn-Italic';
+  src: url(../fonts/Vollkorn-Italic.ttf)
+}
+@font-face {
+  font-family: 'Vollkorn-Medium';
+  src: url(../fonts/Vollkorn-Medium.ttf);
+}
+@font-face {
+  font-family: 'Vollkorn-MediumItalic';
+  src: url(../fonts/Vollkorn-MediumItalic.ttf);
+}
+@font-face {
+  font-family: 'Vollkorn-Regular';
+  src: url(../fonts/Vollkorn-Regular.ttf);
+}
+@font-face {
+  font-family: 'Vollkorn-SemiBold';
+  src: url(../fonts/Vollkorn-SemiBold.ttf);
+}
+@font-face {
+  font-family: 'Vollkorn-SemiBoldItalic';
+  src: url(../fonts/Vollkorn-SemiBoldItalic.ttf);
+}
