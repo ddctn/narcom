@@ -1,0 +1,95 @@
+body{
+  background: #f0f0f0;
+  scroll-behavior: smooth;
+}
+
+nav{
+  border: 1px solid rgb(169, 174, 188);
+  background: #e1e1e1;
+  /* border - обводка */
+  width: 300px; /* ширина навигационного меню */
+  position: fixed; /* позиция привязана к точке на экране */
+  top: 150px;
+  margin-left: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  opacity: .3; /* 30 %*/
+  transition: all 1s ease;
+  height: 90vh;
+}
+
+nav:hover{
+  opacity: 1; /* 100% */
+  transition: all 0.9s ease;
+}
+
+nav p{
+  margin-bottom: 0.5%;
+}
+
+section{
+  width: 700px;
+  margin: 50px auto;
+}
+
+h1{
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 66px;
+  line-height: 45px;
+}
+
+h2{
+  margin-top: 50px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+h3{
+  margin-top: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+p{
+  text-align: justify;
+  word-spacing: -1.5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+a{
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+a:hover{
+  color: #727272;
+}
+
+a:active{color: #8a8a8a;}
+
+
+
+table{
+  height: 100px;
+  width: 700px;
+  border-radius: 15px;
+  background: #d3d3d3;
+  margin-top: 20px;
+}
+
+td{
+  border: 1px solid #f0f0f0;
+  padding: 10px;
+}
+
+caption{
+  font-weight: bold;
+  padding-bottom: 10px;
+}

@@ -3,8 +3,8 @@
 body {
 	background: #e1e1e1;
   font-family: 'Vollkorn-Regular';
- 
 }
+
 h1{
 	color: rgba(0, 0, 0, 0.85);
   font-size: 38px;
@@ -26,7 +26,6 @@ p{
   word-spacing: -1.5px;
   margin-top: 8px;
   margin-bottom: 8px;
-
 }
 
 .cont{
