@@ -3,11 +3,10 @@
   height: 40px;
   background: white;
   border: 1px solid #ccc;
-  box-shadow: 0px 5px 10px 2px rgba(192, 96, 229, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(105, 105, 105, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .menuimg{
@@ -21,28 +20,39 @@
   padding-right: 20px;
 }
 
+.main{
+  margin: 40px auto;
+  display: flex;
+  width: 1100px;
+  height: 500px;
+  justify-content: space-around;
+}
+
 .index_item{
-  width: 900px;
+  width: 500px;
+  height: 500px;
   background: white;
-  margin: 20px auto;
   border: 1px #ccc;
-  border-radius: 20px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
-.index_img{
-  width: 900px;
-  margin-top: -10px;
-  object-fit: cover;
-  height: 250px;
-  object-position: 0px -60px;
+
+.img{
+  width: 500px;
 }
 
-.index_h1, .index_p{
-  width: 880px;
+.index_h1{
+  width: 450px;
   margin: 10px auto;
+  font-size: 28px;
   background: white;
+  color: rgba(0, 0, 0, 0.818);
 }
 
 .index_p{
   color: rgba(0, 0, 0, 0.767);
+  width: 450px;
+  margin: 10px auto;
+  font-size: 18px;
 }

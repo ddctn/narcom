@@ -10,14 +10,14 @@ nav{
   background: #e1e1e1;
   /* border - обводка */
   width: 300px; /* ширина навигационного меню */
+  height: 400px;
   position: fixed; /* позиция привязана к точке на экране */
-  top: 150px;
+  top: 115px;
   margin-left: 10px;
   padding: 10px;
   box-sizing: border-box;
   opacity: .3; /* 30 %*/
   transition: all 1s ease;
-  height: 90vh;
 }
 
 nav:hover{
