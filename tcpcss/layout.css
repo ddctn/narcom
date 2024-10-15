@@ -1,7 +1,9 @@
-body{
-  background: #f0f0f0;
+html, body{
   scroll-behavior: smooth;
+  background: #f0f0f0;
+  font-family: 'PTMono';
 }
+
 
 nav{
   border: 1px solid rgb(169, 174, 188);
@@ -61,6 +63,7 @@ p{
   word-spacing: -1.5px;
   margin-top: 8px;
   margin-bottom: 8px;
+  line-height: 1.15em;
 }
 
 a{
@@ -89,7 +92,15 @@ td{
   padding: 10px;
 }
 
+th{
+  border: 1px solid #f0f0f0;
+  padding: 10px;
+}
+
 caption{
   font-weight: bold;
   padding-bottom: 10px;
 }
+
+
+

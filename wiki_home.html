@@ -46,17 +46,17 @@
 
 <p>Развитием архитектуры Интернета и протоколов в модели TCP/IP занимается открытое международное сообщество проектировщиков <a href="https://ru.wikipedia.org/wiki/Инженерный_совет_Интернета" target="_blank">IETF</a>.</p>
 
-<h2>История</h2>
+<h2 id="s1">История</h2>
 
 <p>Стек протоколов TCP/IP был создан на основе <a href="https://ru.wikipedia.org/wiki/Network_Control_Protocol" target="_blank">NCP (Network Control Protocol)</a> группой разработчиков под руководством <a href="https://ru.wikipedia.org/wiki/Серф,_Винтон" target="_blank">Винтона Серфа</a> в 1972 году. В июле 1976 года Винт Серф и <a href="https://ru.wikipedia.org/wiki/Кан,_Роберт_Эллиот" target="_blank">Боб Кан</a> впервые продемонстрировали передачу данных с использованием TCP по трём различным сетям. Пакет прошёл по следующему маршруту: Сан-Франциско — Лондон — Университет Южной Калифорнии. К концу своего путешествия пакет проделал 150 тысяч км, не потеряв ни одного бита. В 1978 году Серф, <a href="https://ru.wikipedia.org/wiki/Постел,_Джонатан_Брюс" target="_blank">Джон Постел</a> и Дэнни Кохэн решили выделить в TCP две отдельные функции: TCP и IP (англ. Internet Protocol, межсетевой протокол). TCP был ответственен за разбивку сообщения на <a href="https://ru.wikipedia.org/wiki/Датаграмма" target="_blank">датаграммы</a> (англ. datagram) и соединение их в конечном пункте отправки. IP отвечал за передачу (с контролем получения) отдельных датаграмм. Вот так родился современный протокол Интернета. А с 1 января 1983 года ARPANET перешла на новый протокол. Этот день принято считать официальной датой рождения Интернета.</p>
 
-<h3>Формальная спецификация и стандарты</h3>
+<h3 id="s11">Формальная спецификация и стандарты</h3>
 
 <p>Технические стандарты, лежащие в основе набора TCP/IP протоколов, были переданы <a href="https://ru.wikipedia.org/wiki/Инженерный_совет_Интернета" target="_blank">Инженерному совету Интернета</a> (IETF).</p>
 
 <p>Характеристикой архитектуры Internet Protocol Suite является широкое разделение на рабочие области для протоколов, составляющих его основную функциональность. Определяющей спецификацией пакета является <a href="https://ru.wikipedia.org/wiki/Инженерный_совет_Интернета" target="_blank">RFC 1122</a>, которая в общих чертах описывает четыре <a href="https://ru.wikipedia.org/wiki/Уровень_абстракции_(программирование)" target="_blank">уровня абстракции</a>. Они выдержали испытание временем, поскольку IETF никогда не изменяла эту структуру. Как таковая модель сети TCP/IP предшествует модели <a href="https://ru.wikipedia.org/wiki/Сетевая_модель_OSI" target="_blank">OSI</a>, более всеобъемлющей эталонной структуре для общих сетевых систем.</p>
 
-<h2>Уровни стека TCP/IP</h2>
+<h2 id="s2">Уровни стека TCP/IP</h2>
 <p>Стек протоколов TCP/IP включает в себя четыре уровня:</p>
 <ul>
   <li><a href="https://ru.wikipedia.org/wiki/Протоколы_прикладного_уровня" target="_blank">Прикладной уровень</a> (Application Layer)</li>
@@ -65,155 +65,285 @@
   <li><a href="https://ru.wikipedia.org/wiki/Канальный_уровень" target="_blank">Канальный уровень</a> (Network Access Layer)</li>
 </ul>
 
-<p>Протоколы этих уровней полностью реализуют функциональные возможности модели OSI. На стеке протоколов TCP/IP построено всё взаимодействие пользователей в IP-сетях. Стек является независимым от физической среды передачи данных, благодаря чему, в частности, обеспечивается полностью прозрачное взаимодействие между проводными и беспроводными сетями.</p>
+<p>Протоколы этих уровней полностью реализуют функциональные возможности <a href="https://ru.wikipedia.org/wiki/Сетевая_модель_OSI" target="_blank">модели OSI</a>. На стеке протоколов TCP/IP построено всё взаимодействие пользователей в IP-сетях. Стек является независимым от физической среды передачи данных, благодаря чему, в частности, обеспечивается полностью прозрачное взаимодействие между проводными и беспроводными сетями.</p>
 
 <table>
   <caption>Распределение протоколов по уровням модели TCP/IP</caption>
   <tr>
     <td><b>Прикладной</b><br>(Application Layer)</td>
-    <td>напр., HTTP, RTSP, FTP, DNS</td>
+    <td>напр., <a href="https://ru.wikipedia.org/wiki/HTTP" target="_blank">HTTP</a>, <a href="https://ru.wikipedia.org/wiki/RTSP" target="_blank">RTSP</a>, <a href="https://ru.wikipedia.org/wiki/FTP" target="_blank">FTP</a>, <a href="https://ru.wikipedia.org/wiki/DNS" target="_blank">DNS</a></td>
   </tr>
   <tr>
     <td><b>Транспортный</b><br>(Transport Layer)</td>
-    <td>напр., TCP, UDP, SCTP, DCCP
-      (RIP, протоколы маршрутизации, подобные OSPF, что работают поверх IP, являются частью сетевого уровня)</td>
+    <td>напр., <a href="https://ru.wikipedia.org/wiki/TCP" target="_blank">TCP</a>, <a href="https://ru.wikipedia.org/wiki/UDP" target="_blank">UDP</a>, <a href="https://ru.wikipedia.org/wiki/SCTP" target="_blank">SCTP</a>, <a href="https://ru.wikipedia.org/wiki/DCCP" target="_blank">DCCP</a> (<a href="https://ru.wikipedia.org/wiki/RIP2" target="_blank">RIP</a>, протоколы маршрутизации, подобные <a href="" target="_blank"></a>OSPF, что работают поверх <a href="https://ru.wikipedia.org/wiki/OSPF" target="_blank">IP</a>, являются частью сетевого уровня)</td>
   </tr>
   <tr>
     <td><b>Сетевой (Межсетевой)</b><br>(Network Layer)</td>
-    <td>Для TCP/IP это IP
-      (вспомогательные протоколы, вроде ICMP и IGMP, работают поверх IP, но тоже относятся к сетевому уровню; протокол ARP является самостоятельным вспомогательным протоколом, работающим поверх канального уровня)</td>
+    <td>Для TCP/IP это <a href="https://ru.wikipedia.org/wiki/IP" target="_blank">IP</a>(вспомогательные протоколы, вроде <a href="https://ru.wikipedia.org/wiki/ICMP" target="_blank">ICMP</a> и <a href="https://ru.wikipedia.org/wiki/IGMP" target="_blank">IGMP</a>, работают поверх IP, но тоже относятся к сетевому уровню; протокол <a href="https://ru.wikipedia.org/wiki/ARP" target="_blank">ARP</a> является самостоятельным вспомогательным протоколом, работающим поверх канального уровня)</td>
   </tr>
   <tr>
     <td><b>Уровень сетевого доступа (Канальный)</b><br>(Link Layer)</td>
-    <td>Ethernet, IEEE 802.11, WLAN, SLIP, Token Ring, ATM и MPLS, физическая среда и принципы кодирования информации, T1, E1</td>
+    <td><a href="https://ru.wikipedia.org/wiki/Ethernet" target="_blank">Ethernet</a>, <a href="https://ru.wikipedia.org/wiki/IEEE_802.11" target="_blank">IEEE 802.11</a>, <a href="https://ru.wikipedia.org/wiki/Беспроводная_локальная_сеть" target="_blank">WLAN</a>, <a href="https://ru.wikipedia.org/wiki/SLIP" target="_blank">SLIP</a>, <a href="https://ru.wikipedia.org/wiki/Token_Ring" target="_blank">Token Ring</a>, <a href="https://ru.wikipedia.org/wiki/ATM" target="_blank">ATM</a> и <a href="https://ru.wikipedia.org/wiki/MPLS" target="_blank">MPLS</a>, физическая среда и принципы кодирования информации, <a href="https://ru.wikipedia.org/wiki/T1_(цифровые_каналы)" target="_blank">T1</a>, <a href="https://ru.wikipedia.org/wiki/E1_(ISDN)" target="_blank">E1</a></td>
   </tr>
 
 </table>
 
-<h3>Прикладной уровень</h3>
+<h3 id="s21">Прикладной уровень</h3>
 
-<p>На прикладном уровне (Application layer) работает большинство сетевых приложений.</p>
+<p>На <a href="https://ru.wikipedia.org/wiki/Прикладной_уровень" target="_blank">прикладном уровне</a> (Application layer) работает большинство сетевых приложений.</p>
 
-<p>Эти программы имеют свои собственные протоколы обмена информацией, например, Интернет-браузер для протокола HTTP, ftp-клиент для протокола FTP (передача файлов), почтовая программа для протокола SMTP (электронная почта), SSH (безопасное соединение с удалённой машиной), DNS (преобразование символьных имён в IP-адреса) и многие другие.</p>
+<p>Эти программы имеют свои собственные протоколы обмена информацией, например, <a href="https://ru.wikipedia.org/wiki/Интернет-браузер" target="_blank">Интернет-браузер</a> для протокола <a href="" target="_blank">HTTP</a>, <a href="https://ru.wikipedia.org/wiki/FTP-клиент" target="_blank">ftp-клиент</a> для протокола <a href="https://ru.wikipedia.org/wiki/FTP" target="_blank">FTP</a> (передача файлов), почтовая программа для протокола <a href="" target="_blank">SMTP</a> (электронная почта), <a href="https://ru.wikipedia.org/wiki/SSH" target="_blank">SSH</a> (безопасное соединение с удалённой машиной), DNS (преобразование символьных имён в <a href="https://ru.wikipedia.org/wiki/IP-адрес" target="_blank">IP-адреса</a>) и многие другие.</p>
 
-<p>В массе своей эти протоколы работают поверх TCP или UDP и привязаны к определённому порту, например:</p>
+<p>В массе своей эти протоколы работают поверх TCP или <a href="https://ru.wikipedia.org/wiki/UDP" target="_blank">UDP</a> и привязаны к определённому порту, например:</p>
 
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li><a href="https://ru.wikipedia.org/wiki/HTTP" target="_blank">HTTP</a> на TCP-порт 80 или 8080</li>
+  <li><a href="https://ru.wikipedia.org/wiki/FTP" target="_blank">FTP</a> на TCP-порт 20 (для передачи данных) и 21 (для управляющих команд)</li>
+  <li><a href="https://ru.wikipedia.org/wiki/SSH" target="_blank">SSH</a> на TCP-порт 22</li>
+  <li>запросы <a href="https://ru.wikipedia.org/wiki/DNS" target="_blank">DNS</a> на порт UDP (реже TCP) 53</li>
+  <li>обновление маршрутов по протоколу <a href="https://ru.wikipedia.org/wiki/RIP2" target="_blank">RIP</a> на UDP-порт 520</li>
 </ul>
 
-<p>Эти порты определены Агентством по выделению имён и уникальных параметров протоколов (IANA).</p>
+<p>Эти порты определены Агентством по выделению имён и уникальных параметров протоколов (<a href="https://ru.wikipedia.org/wiki/IANA" target="_blank"><IANA/a>).</p>
 
-<p>К этому уровню относятся: Echo, Finger, Gopher, HTTP, HTTPS, IMAP, IMAPS, IRC, NNTP, NTP, POP3, POPS, QOTD, RTSP, SNMP, SSH, Telnet, XDMCP.</p>
+<p>К этому уровню относятся: Echo, <a href="https://ru.wikipedia.org/wiki/Протокол_finger" target="_blank">Finger</a>, <a href="https://ru.wikipedia.org/wiki/Gopher_(сетевой_протокол)" target="_blank">Gopher</a>, <a href="https://ru.wikipedia.org/wiki/HTTP" target="_blank">HTTP</a>, <a href="https://ru.wikipedia.org/wiki/HTTPS" target="_blank">HTTPS</a>, <a href="https://ru.wikipedia.org/wiki/IMAP" target="_blank">IMAP</a>, IMAPS, <a href="https://ru.wikipedia.org/wiki/IRC" target="_blank"></a>IRC, <a href="https://ru.wikipedia.org/wiki/NNTP" target="_blank">NNTP</a>, <a href="https://ru.wikipedia.org/wiki/NTP" target="_blank">NTP</a>, <a href="https://ru.wikipedia.org/wiki/POP3" target="_blank">POP3</a>, POPS, <a href="https://ru.wikipedia.org/wiki/QOTD" target="_blank">QOTD</a>, <a href="https://ru.wikipedia.org/wiki/RTSP" target="_blank">RTSP</a>, <a href="https://ru.wikipedia.org/wiki/SNMP" target="_blank">SNMP</a>, <a href="https://ru.wikipedia.org/wiki/SSH" target="_blank">SSH</a>, <a href="https://ru.wikipedia.org/wiki/Telnet" target="_blank">Telnet</a>, <a href="https://ru.wikipedia.org/wiki/XDMCP" target="_blank">XDMCP</a>.</p>
 
-<h3>Транспортный уровень</h3>
+<h3 id="s22">Транспортный уровень</h3>
 
-<p>Протоколы транспортного уровня (Transport layer) могут решать проблему негарантированной доставки сообщений («дошло ли сообщение до адресата?»), а также гарантировать правильную последовательность прихода данных. В стеке TCP/IP транспортные протоколы определяют, для какого именно приложения предназначены эти данные.</p>
+<p>Протоколы <a href="https://ru.wikipedia.org/wiki/Транспортный_уровень" target="_blank">транспортного уровня</a> (Transport layer) могут решать проблему негарантированной доставки сообщений («дошло ли сообщение до адресата?»), а также гарантировать правильную последовательность прихода данных. В стеке TCP/IP транспортные протоколы определяют, для какого именно приложения предназначены эти данные.</p>
 
-<p>Протоколы автоматической маршрутизации, логически представленные на этом уровне (поскольку работают поверх IP), на самом деле являются частью протоколов сетевого уровня; например OSPF (IP-идентификатор 89).</p>
+<p>Протоколы автоматической маршрутизации, логически представленные на этом уровне (поскольку работают поверх IP), на самом деле являются частью протоколов сетевого уровня; например <a href="https://ru.wikipedia.org/wiki/OSPF" target="_blank">OSPF</a> (IP-идентификатор 89).</p>
 
-<p>TCP (IP-идентификатор 6) — «гарантированный» транспортный механизм с предварительным установлением соединения, предоставляющий приложению надёжный поток данных, дающий уверенность в безошибочности получаемых данных, перезапрашивающий данные в случае потери и устраняющий дублирование данных. TCP позволяет регулировать нагрузку на сеть, а также уменьшать время ожидания данных при передаче на большие расстояния. Более того, TCP гарантирует, что полученные данные были отправлены точно в такой же последовательности. В этом его главное отличие от UDP.</p>
+<p>TCP (IP-идентификатор 6) — «гарантированный» транспортный механизм с предварительным установлением соединения, предоставляющий приложению надёжный <a href="https://ru.wikipedia.org/wiki/Поток_данных" target="_blank">поток данных</a>, дающий уверенность в безошибочности получаемых данных, перезапрашивающий данные в случае потери и устраняющий дублирование данных. TCP позволяет регулировать нагрузку на сеть, а также уменьшать время ожидания данных при передаче на большие расстояния. Более того, TCP гарантирует, что полученные данные были отправлены точно в такой же последовательности. В этом его главное отличие от <a href="https://ru.wikipedia.org/wiki/UDP" target="_blank">UDP</a>.</p>
 
-<p></p>
-<p></p>
-<p></p>
+<p>UDP (IP-идентификатор 17) протокол передачи датаграмм без установления соединения. Также его называют протоколом «ненадёжной» передачи, в смысле невозможности удостовериться в доставке сообщения адресату, а также возможного перемешивания пакетов. В приложениях, требующих гарантированной передачи данных, используется протокол TCP.</p>
 
-<h3></h3>
+<p>UDP обычно используется в таких приложениях, как потоковое видео и компьютерные игры, где допускается потеря пакетов, а повторный запрос затруднён или не оправдан, либо в приложениях вида запрос-ответ (например, запросы к DNS), где создание соединения занимает больше ресурсов, чем повторная отправка.</p>
 
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<p>И TCP, и UDP используют для определения протокола верхнего уровня число, называемое <a href="https://ru.wikipedia.org/wiki/Порт_(компьютерные_сети)" target="_blank">портом</a>.</p>
 
-<h3></h3>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<h3 id="s23">Сетевой (межсетевой) уровень</h3>
 
-<h2></h2>
+<p>Межсетевой уровень (Network layer) изначально разработан для передачи данных из одной сети в другую. На этом уровне работают маршрутизаторы, которые перенаправляют пакеты в нужную сеть путём расчёта адреса сети по маске сети. Примерами такого протокола является X.25 и IPC в сети ARPANET.</p>
 
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<p>С развитием концепции глобальной сети в уровень были внесены дополнительные возможности по передаче из любой сети в любую сеть, независимо от протоколов нижнего уровня, а также возможность запрашивать данные от удалённой стороны, например в протоколе ICMP (используется для передачи диагностической информации IP-соединения) и IGMP (используется для управления multicast-потоками).</p>
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <td></td>
-  </tr>
-  <tr>
-    <th></th>
-    <th></th>
-    <td></td>
-  </tr>
-  <tr>
-    <th></th>
-    <th></th>
-    <td></td>
-  </tr>
-  <tr>
-    <th></th>
-    <th></th>
-    <td></td>
-  </tr>
-  <tr>
-    <th></th>
-    <th></th>
-    <td></td>
-  </tr>
-  <tr>
-    <th></th>
-    <th></th>
-    <td></td>
-  </tr>
-  <tr>
-    <th></th>
-    <th></th>
-    <td></td>
-  </tr> 
+<p>ICMP и IGMP расположены над IP и должны попасть на следующий — транспортный — уровень, но функционально являются протоколами сетевого уровня, и поэтому их невозможно вписать в модель OSI.</p>
+
+<p>Пакеты сетевого протокола IP могут содержать код, указывающий, какой именно протокол следующего уровня нужно использовать, чтобы извлечь данные из пакета. Это число — уникальный IP-номер протокола. ICMP и IGMP имеют номера, соответственно, 1 и 2.</p>
+
+<p>К этому уровню относятся: DVMRP, ICMP, IGMP, MARS, PIM, RIP, RIP2, RSVP</p>
+
+<h3 id="s24">Канальный уровень</h3>
+
+<p>Канальный уровень (англ. Link layer) описывает способ кодирования данных для передачи пакета данных на физическом уровне (то есть специальные последовательности бит, определяющих начало и конец пакета данных, а также обеспечивающие помехоустойчивость). Ethernet, например, в полях заголовка пакета содержит указание того, какой машине или машинам в сети предназначен этот пакет.</p>
+
+<p>Примеры протоколов канального уровня — Ethernet, IEEE 802.11 WLAN, SLIP, Token Ring, ATM и MPLS.</p>
+
+<p>PPP не совсем вписывается в такое определение, поэтому обычно описывается в виде пары протоколов HDLC/SDLC.</p>
+
+<p>MPLS занимает промежуточное положение между канальным и сетевым уровнем и, строго говоря, его нельзя отнести ни к одному из них.</p>
+
+<p>Канальный уровень иногда разделяют на 2 подуровня — LLC и MAC.</p>
+
+<p>Кроме того, канальный уровень описывает среду передачи данных (будь то коаксиальный кабель, витая пара, оптическое волокно или радиоканал), физические характеристики такой среды и принцип передачи данных (разделение каналов, модуляцию, амплитуду сигналов, частоту сигналов, способ синхронизации передачи, время ожидания ответа и максимальное расстояние).</p>
+
+<p>При проектировании стека протоколов на канальном уровне рассматривают помехоустойчивое кодирование — позволяющие обнаруживать и исправлять ошибки в данных вследствие воздействия шумов и помех на канал связи.</p>
+
+<h2 id="s3">Сравнение с моделью OSI</h2>
+
+<p>Три верхних уровня в модели OSI, то есть уровень приложения, уровень представления и уровень сеанса, отдельно не различаются в модели TCP/IP, которая имеет только прикладной уровень над транспортным уровнем. Хотя некоторые чистые приложения протокола OSI, такие как X.400, также объединяют их, нет требования, что стек протокола TCP/IP должен накладывать монолитную архитектуру над транспортным уровнем. Например, протокол NFS-приложений работает через протокол представления данных External Data Representation (XDR), который, в свою очередь, работает по протоколу Remote Procedure Call (RPC). RPC обеспечивает надёжную передачу данных, поэтому он может безопасно использовать транспорт UDP с максимальным усилием.</p>
+
+<p>Различные авторы интерпретировали модель TCP/IP по-разному и не согласны с тем, что уровень связи или вся модель TCP/IP охватывает проблемы первого уровня модели OSI (физический уровень) или предполагается, что аппаратный уровень ниже уровня канала.</p>
+
+<p>Несколько авторов попытались включить слои 1 и 2 модели OSI в модель TCP/IP, поскольку они обычно упоминаются в современных стандартах (например, IEEE и ITU). Это часто приводит к модели с пятью слоями, где уровень связи или уровень доступа к сети разделяются на слои 1 и 2 модели OSI.</p>
+<p>Усилия по разработке протокола IETF не касаются строгого расслоения. Некоторые из его протоколов могут не соответствовать чисто модели OSI, хотя RFC иногда ссылаются на неё и часто используют старые номера уровня OSI. IETF неоднократно заявлял, что разработка интернет-протокола и архитектуры не должна соответствовать требованиям OSI. В RFC 3439, адресованном интернет-архитектуре, содержится раздел, озаглавленный «Слой, считающийся вредным».</p>
+<p>Например, считается, что уровни сеанса и представления пакета OSI включены в прикладной уровень пакета TCP/IP. Функциональность уровня сеанса можно найти в протоколах, таких как HTTP и SMTP, и более очевидна в таких протоколах, как Telnet и протокол инициации сеанса (SIP). Функциональность уровня сеанса также реализована с нумерацией портов протоколов TCP и UDP, которые охватывают транспортный уровень в наборе TCP/IP. Функции уровня представления реализуются в приложениях TCP/IP со стандартом MIME при обмене данными.</p>
+<p>Конфликты очевидны также в оригинальной модели OSI, ISO 7498, когда не рассматриваются приложения к этой модели, например, ISO 7498/4 Management Framework или ISO 8648 Internal Organization of the Network layer (IONL). Когда рассматриваются документы IONL и Management Framework, ICMP и IGMP определяются как протоколы управления уровнем для сетевого уровня. Аналогичным образом IONL предоставляет структуру для «зависимых от подсетей объектов конвергенции», таких как ARP и RARP.</p>
+<p>Протоколы IETF могут быть инкапсулированы рекурсивно, о чём свидетельствуют протоколы туннелирования, такие как Инкапсуляция общей маршрутизации (GRE). GRE использует тот же механизм, который OSI использует для туннелирования на сетевом уровне. Существуют разногласия в том, как вписать модель TCP/IP в модель OSI, поскольку уровни в этих моделях не совпадают.</p>
+<p>К тому же, модель OSI не использует дополнительный уровень — «Internetworking» — между канальным и сетевым уровнями. Примером спорного протокола может быть ARP или STP.</p>
+
+<p>Вот как традиционно протоколы TCP/IP вписываются в модель OSI:</p>
+
+<table class="trash">
+  <caption>Распределение протоколов по уровням модели OSI</caption>
+    <tbody>
+      <tr>
+        <td><b>TCP/IP</b></td>
+        <td><b>OSI</b></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="trash" rowspan="3">Прикладной</td>
+        <td>Прикладной</td>
+        <td>	напр., HTTP, SMTP, SNMP, FTP, Telnet, SSH, SCP, SMB, NFS, RTSP, BGP</td>
+      </tr>
+      <tr>
+        <td>Представления</td>
+        <td>напр., XDR, AFP, TLS, SSL</td>
+      </tr>
+      <tr>
+        <td>Сеансовый</td>
+        <td>напр., ISO 8327 / CCITT X.225, RPC, NetBIOS, PPTP, L2TP, ASP</td>
+      </tr>
+      <tr>
+        <td class="trash">Транспортный</td>
+        <td>Транспортный</td>
+        <td>напр., TCP, UDP, SCTP, SPX, ATP, DCCP, GRE</td>
+      </tr>
+      <tr>
+        <td class="trash">Сетевой</td>
+        <td>Сетевой</td>
+        <td>напр., IP, ICMP, IGMP, CLNP, OSPF, RIP, IPX, DDP</td>
+      </tr>
+      <tr>
+        <td class="trash" rowspan="2">Канальный</td>
+        <td>Канальный</td>
+        <td>напр., Ethernet, Token ring, HDLC, PPP, X.25, Frame relay, ISDN, ATM, SPB, MPLS, ARP</td>
+      </tr>
+      <tr>
+        <td>Физический</td>
+        <td>напр., электрические провода, радиосвязь, волоконно-оптические провода, инфракрасное излучение</td>
+      </tr>
+      
+    </tbody>
 </table>
 
-<h2></h2>
-<p></p>
-<p></p>
+<p>Обычно в стеке TCP/IP верхние 3 уровня модели OSI (прикладной, представления и сеансовый) объединяют в один — прикладной. Поскольку в таком стеке не предусматривается унифицированный протокол передачи данных, функции по определению типа данных передаются приложению.</p>
 
-<table>
+<h2 id="s4">Описание модели TCP/IP в технической литературе</h2>
+
+<p>В модели TCP/IP, в отличие от модели OSI, физический уровень никак не описывается. Тем не менее, в некоторых учебниках[7], для лучшего понимания, описывается «гибридная модель TCP/IP — OSI» из 5 уровней, содержащая дополнительный — физический уровень.</p>
+<p>Следующая таблица показывает различные вариации в описании модели TCP/IP. Количество уровней варьируется от трёх до семи.</p>
+
+<table class="trash">
   <tr>
-    <th></th>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
+    <th>Kurose, Forouzan</th>
+    <th>Comer, Kozierok</th>
+    <th>Stallings</th>
+    <th>Tanenbaum</th>
+    <th>RFC 1122, Internet STD 3 (1989)</th>
+    <th>Cisco Academy</th>
+    <th>Mike Padlipsky's 1982 «Arpanet Reference Model» (RFC 871)</th>
+    <th>OSI model</th>
   </tr>
-  <tr></tr>
-  <tr></tr>
-  <tr></tr>
-  <tr></tr>
-  <tr></tr>
-  <tr></tr>
-  <tr></tr>
+  <tr>
+    <td>Пять уровней</td>
+    <td>Четыре + 1 уровень</td>
+    <td>Пять уровней</td>
+    <td>Пять уровней</td>
+    <td>Четыре уровня</td>
+    <td>Четыре уровня</td>
+    <td>Три уровня</td>
+    <td>Семь уровней</td>
+  </tr>
+  <tr>
+    <td>«Five-layer Internet model» or «TCP/IP protocol suite»</td>
+    <td>«TCP/IP 5-layer reference model»</td>
+    <td>«TCP/IP model»</td>
+    <td>«TCP/IP 5-layer reference model»</td>
+    <td>«Internet model»</td>
+    <td>«Internet model»</td>
+    <td>«Arpanet reference model»</td>
+    <td>OSI model</td>
+  </tr>
+  <tr>
+    <td rowspan="3">Application</td>
+    <td rowspan="3">Application</td>
+    <td rowspan="3">Application</td>
+    <td rowspan="3">Application</td>
+    <td rowspan="3">Application (Прикладной)</td>
+    <td rowspan="3">Application</td>
+    <td rowspan="3">Application/Process</td>
+    <td>Application</td>
+  </tr>
+  <tr>
+    <td>Presentation</td>
+  </tr>
+  <tr>
+    <td>Session</td>
+  </tr>
+  <tr>
+    <td>Transport</td>
+    <td>Transport</td>
+    <td>Host-to-host or transport</td>
+    <td>Transport</td>
+    <td>Transport (Транспортный)</td>
+    <td>Transport</td>
+    <td rowspan="2">Host-to-host</td>
+    <td>Transport</td>
+  </tr>
+  <tr>   
+    <td>Network</td>
+    <td>Internet</td>
+    <td>Internet</td>
+    <td>Internet</td>
+    <td>Internet (Сетевой)</td>
+    <td>Internetwork</td>
+    <td>Network</td>
+  </tr>
+  <tr>
+    <td>Data link</td>
+    <td>Data link (Network interface)</td>
+    <td>Network access</td>
+    <td>Data link</td>
+    <td>Link (Канальный)</td>
+    <td>Network interface</td>
+    <td>Network interface</td>
+    <td>Data link</td>
+  </tr>
+  <tr>
+    <td>Physical</td>
+    <td>(Hardware)</td>
+    <td>Physical</td>
+    <td>Physical</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Physical</td>
+  </tr>
 </table>
 
 <p>Некоторые из моделей в приведённой таблицы взяты из учебников, которые являются вторичными источниками и могут расходиться с <a href="https://datatracker.ietf.org/doc/html/rfc1122" target="_blank">RFC 1122</a> и другими IETF-первоисточниками.</p>
+
+<h2 id="s5">См. также</h2>
+
+<ul>
+  <li><a href="https://ru.wikipedia.org/wiki/Сетевые_сервисы" target="_blank">Сетевые сервисы</a></li>
+  <li><a href="https://ru.wikipedia.org/wiki/Сетевая_модель_OSI" target="_blank">Модель OSI</a></li>
+  <li><a href="https://ru.wikipedia.org/wiki/TCP/IP" target="_blank">Модель DOD</a></li>
+  <li><a href="https://ru.wikipedia.org/wiki/Динамический_порт" target="_blank">Динамический порт</a></li>
+  <li><a href="https://ru.wikipedia.org/wiki/LwIP" target="_blank">lwIP</a></li>
+  <li><a href="https://ru.wikipedia.org/wiki/UIP_(micro_IP)" target="_blank">uIP (micro IP)</a></li>
+</ul>
+
+<h2 id="s6">Примечания</h2>
+<ul>
+  <li>у меня</li>
+  <li>голова</li>
+  <li>кругом</li>
+  <li>от количества</li>
+  <li>ссылок в википедии</li>
+</ul>
+
+<h2 id="s7">Литература</h2>
+
+<ul>
+  <li>Терри Оглтри. Модернизация и ремонт сетей = Upgrading and Repairing Networks. — 4-е изд. — М.: «Вильямс», 2005. — С. 1328. — ISBN 0-7897-2817-6.</li>
+  <li>Дуглас Камер. Сети TCP/IP, том 1. Принципы, протоколы и структура = Internetworking with TCP/IP, Vol. 1: Principles, Protocols and Architecture. — М.: «Вильямс», 2003. — С. 880. — ISBN 0-13-018380-6.</li>
+  <li>Семенов Ю. А. Протоколы Internet. — 2-е изд., стереотип.. — М.: Горячая линия - Телеком, 2005. — 1100 с. — 1150 экз. — ISBN 5-93517-044-2.</li>
+  <li>Паркер Т., Сиян К. TCP/IP. Для профессионалов. — 3-е изд.. — СПб.: Питер, 2004. — 859 с. — 4000 экз. — ISBN 5-8046-0041-9.</li>
+</ul>
+
+<h2 id="s8">Ссылки</h2>
+<ul>
+  <li><a href="https://www.iana.org/" target="_blank">Официальный сайт IANA</a></li>
+  <li><a href="https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml" target="_blank">IANA — идентификаторы протоколов</a></li>
+  <li><a href="https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml" target="_blank">IANA — номера портов</a></li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc1122" target="_blank">RFC 1122</a></li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc793" target="_blank">RFC 793 — TCP</a></li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc791" target="_blank">RFC 791 — IP</a></li>
+</ul>
 
 </section>
 
