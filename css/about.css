@@ -1,0 +1,83 @@
+.mainsection{
+  width: 100%;
+  overflow-x: hidden; /* cкрывает все. что вылезло */
+}
+
+.block1{
+  width: 1440px;
+  margin: 2% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.block1text, .block1img{
+  width: 45%;
+  padding: 0% 5%;
+}
+
+.block1text p{
+  margin-top: 5%;
+}
+
+footer{
+  width: 100%;
+  
+}
+
+.footertext{
+  width: 600px;
+  text-align: center;
+  margin: 0% auto;
+}
+
+.footertext p{
+  margin: 2% 0%;
+}
+
+.buttons{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.butt1{
+background-color: white;
+border-radius: 2px;
+color: black;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+transition: 0.2s ease-in-out;
+cursor: pointer;
+}
+
+
+.butt1:hover{
+transition: all 0.2s ease-in-out;
+background-color: black;
+color: white;
+}
+
+.butt2{
+  background-color: black;
+  border-radius: 2px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+
+.butt2:hover{
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+  color: black;
+}
