@@ -46,3 +46,8 @@
   font-family: 'Vollkorn-SemiBoldItalic';
   src: url(../fonts/Vollkorn-SemiBoldItalic.ttf);
 }
+
+@font-face {
+  font-family: 'PTSans';
+  src: url(../fonts/PTSansCaption-Regular.ttf);
+}

@@ -1,5 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body{
   width: 100%;
+  overflow-x: hidden;
+  background: rgb(215, 215, 215);
 }
 
 .menubar{
@@ -31,6 +37,8 @@ html, body{
   height: 500px;
   justify-content: space-around;
 }
+
+
 
 .index_item{
   width: 500px;

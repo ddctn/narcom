@@ -1,10 +1,14 @@
-.mainsection{
+*{
+  box-sizing: border-box;
+}
+
+body{
   width: 100%;
-  overflow-x: hidden; /* cкрывает все. что вылезло */
+  overflow-x: hidden;
+  font-family: 'PTSans';
 }
 
 .block1{
-  width: 1440px;
   margin: 2% auto;
   display: flex;
   justify-content: space-between;
